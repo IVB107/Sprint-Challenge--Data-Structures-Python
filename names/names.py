@@ -11,6 +11,9 @@ names_2 = f.read().split("\n")  # List containing 10000 names
 f.close()
 
 # My Solution:
+# Time Complexity: O(2n) -> O(n)
+# Space Complexity (Worst): O(2n) -> O(n)
+
 name_log = {}
 duplicates = []
 for name in names_1:
@@ -20,6 +23,9 @@ for name in names_2:
         duplicates.append(name)
 
 # Original Solution:
+# Time Complexity: O(n^2)
+# Space Complexity (Worst): O(n)
+
 # duplicates = []
 # for name_1 in names_1:
 #     for name_2 in names_2:
